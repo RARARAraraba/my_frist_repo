@@ -1,1 +1,3 @@
-# my_frist_repo
+# Создали my_frist_repo
+
+Добавили текст 
