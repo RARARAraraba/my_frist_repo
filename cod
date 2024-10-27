@@ -1,0 +1,16 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string input = Console.ReadLine();
+
+        string[] initialArray = input.Split(',');
+
+        string[] resultArray = GetShortStrings(initialArray);
+
+        Console.WriteLine("Результат: [" + string.Join(", ", resultArray) + "]");
+    }
+
+
