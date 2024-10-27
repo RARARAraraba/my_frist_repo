@@ -12,5 +12,27 @@ class Program
 
         Console.WriteLine("Результат: [" + string.Join(", ", resultArray) + "]");
     }
+    static string[] GetShortStrings(string[] array)
+    {
+        int count = 0;
+        foreach (string str in array)
+        {
+            if (str.Trim().Length <= 3)
+                count++;
+        }
+        string[] result = new string[count];
+        int index = 0;
 
+        foreach (string str in array)
+        {
+            if (str.Trim().Length <= 3)
+            {
+                result[index] = str.Trim();
+                index++;
+            }
+        }
+
+        return result;
+    }
+}
 
